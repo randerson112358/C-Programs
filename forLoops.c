@@ -3,27 +3,22 @@
 
 int main(){
 	
-	int i;
-	int array[10]={1,2,3,4,5,6,7,8,9,10};
-	int sum = 0;
-	
-	//Create our for loop
-	for(i=0; i < 10; i++){
-		
-		sum = sum + array[i];
-		
-		//If i reaches the last number before exiting the loop print '=' instead of '+'
-		if(i == 9){
-			printf("%d = ", array[i]);
-		}
-		else{
-			printf("%d + ", array[i]);
-		}
+	int i,n,sum=0;
+	printf("enter number of elements");
+	scanf("%d",&n);
+	int a[n];
+	for(i=0;i<n;i++)
+	{
+         scanf("%d ",&a[i]);
 	}
+	for(i=0;i<n;i++)
+	{
+        sum=sum+a[i];
+	}		
 	
 	//Print the sum of the array
 	printf("%d \n", sum);
-	
+
 	char *name = "Izzy";
 	int length = strlen(name);
 	
