@@ -1,24 +1,49 @@
 /* 
-This program adds numbers from 0 to n 
-By: randerson112358
-4/4/2014
-
+ *
+ *
+ 
+ This program adds numbers from 0 to n.
+ By: randerson112358
+ Date: 4/4/2014
+ 
+ *
+ *
 */
 
+
+//Header File has information related to input/output functions.
 #include<stdio.h>
 
-int main(void){
-	
+//Main Function
+int main(void)
+{
+	//initialize the variables
 	int n,i, sum=0;
 	
-	printf("Please insert a number \n");
+	//Take input of a number
+	printf("PLEASE ENTER A POSITIVE NUMBER:: ");
 	scanf("%d", &n);
 	
 	for(i=0; i<=n; i++)
 	  sum+=i;
 	  
-	printf("The sum of all the numbers from 0 to %d is %d\n", n,sum);
+	//output to console in a formatted manner
+	printf("\nTHE SUM OF ALL NUMBERS FROM 0 TO %d IS:: %d\n", n, sum);
 	
-	
-	system("pause");
+	return 0;
 }
+
+
+
+
+/*
+ *
+ *
+ OUTPUT OF ABOVE PROGRAM
+ 
+ PLEASE ENTER A POSITIVE NUMBER:: 5
+ THE SUM OF ALL NUMBERS FROM 0 TO %d IS:: 15
+ 
+ *
+ *
+*/
