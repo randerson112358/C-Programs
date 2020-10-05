@@ -8,12 +8,14 @@
 
 int main(void){
 	
-	int n = 16;
+	int n;
+	printf("Enter an Positive Integer\n");
+	scanf("%d",&n);
 	
-	if(n%2 == 0)
-	  printf("Even \n");
-	else
-	  printf("Odd \n");
-	  
-	system("pause");
+	if(n % 2 == 0){
+	  printf("%d Is Even Number \n");
+	}
+	else{
+	  printf("%d Is Odd NUmber \n");
+	{
 }
